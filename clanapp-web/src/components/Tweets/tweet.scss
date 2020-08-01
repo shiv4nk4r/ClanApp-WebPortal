@@ -1,0 +1,19 @@
+.Tweet {
+  background-color: #1b1b1b;
+  min-height: 10vh;
+  color: #fff;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0px;
+  .message {
+    font-size: 2rem;
+  }
+  .from {
+    padding: 10px 0px;
+    font-size: 0.9rem;
+    color: cyan;
+  }
+}
