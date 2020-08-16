@@ -1,0 +1,33 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: lightgray;
+
+  .loginContainer {
+    padding: 100px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1b1b1b;
+
+    button {
+      margin-top: 50px;
+      text-transform: inherit !important;
+      background-color: #de5246;
+      color: #fff;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        color: #de5246;
+        border: 1px solid #de5246;
+        background-color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.userItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  margin: 9px 0px;
+  border-radius: 3px;
+  color: #1b1b1b;
+  background-color: #fff;
+  border: 1px solid rgb(211, 210, 210);
+  transition: all 150ms ease-in-out;
+  &:hover {
+    background-color: rgb(211, 210, 210);
+  }
+
+  .userName,
+  .userEmail,
+  .userContact {
+    display: flex;
+    align-items: center;
+    .MuiSvgIcon-root {
+      color: #1b1b1b;
+      margin: 0px 10px;
+    }
+  }
+  .userEmail {
+    flex: 1 !important;
+  }
+  .status {
+    .Red {
+      color: #de5246;
+    }
+    margin: 0px 20px;
+    .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+      background-color: lightgreen !important;
+    }
+    .MuiIconButton-label {
+      color: #1aa260 !important;
+    }
+  }
+}

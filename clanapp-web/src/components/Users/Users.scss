@@ -1,0 +1,107 @@
+.users-main-wrapper {
+  background-color: gray;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .users-approved-wrapper {
+    margin: 10px 0px;
+    height: 45vh;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    .title-section {
+      background-color: #1aa260;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        font-weight: 700;
+        color: #fff;
+      }
+      .numUsers {
+        color: #fff;
+      }
+      .input {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        input {
+          margin: 0px 5px;
+          color: #fff;
+          padding: 5px 0px;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #fff;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .users-section {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0px;
+      padding: 0px 20px;
+      height: 80%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+  }
+
+  .users-pending-wrapper {
+    height: 45vh;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 0px;
+    overflow: hidden;
+    .title-section {
+      background-color: #de5246;
+      align-items: center;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      .title {
+        font-weight: 700;
+        color: #fff;
+      }
+      .numUsers {
+        color: #fff;
+      }
+      .input {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        input {
+          margin: 0px 5px;
+          color: #fff;
+          padding: 5px 0px;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #fff;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .users-section {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0px;
+      padding: 0px 20px;
+      height: 80%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+  }
+}

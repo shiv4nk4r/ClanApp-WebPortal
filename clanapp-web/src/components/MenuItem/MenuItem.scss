@@ -1,0 +1,18 @@
+.MenuItem {
+  color: #fff !important;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  .MuiSvgIcon-root {
+    padding: 0px 10px;
+  }
+  &:hover {
+    background-color: #005f8e;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}

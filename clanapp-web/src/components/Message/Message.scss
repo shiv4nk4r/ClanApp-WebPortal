@@ -1,0 +1,25 @@
+.message {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+
+  .messageInformation {
+    padding-left: 20px;
+    h4 {
+      margin-bottom: 5px;
+      .massageTimestamp {
+        color: gray;
+        font-weight: 300;
+        font-size: 0.8rem;
+        padding-left: 10px;
+      }
+    }
+  }
+}

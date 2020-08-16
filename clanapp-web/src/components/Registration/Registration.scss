@@ -1,0 +1,107 @@
+.form-header {
+  min-height: 20vh;
+  background-color: #21ada8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  font-weight: 400;
+  font-size: 3rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+    font-size: 1rem !important;
+    font-weight: 300;
+    strong {
+      font-size: 1.2rem;
+    }
+    Button {
+      margin: 10px 0px !important;
+      padding: 10px 20px !important;
+      color: #fff !important;
+      background-color: #21ada8 !important;
+      border: 2px solid #fff !important;
+      &:hover {
+        color: #21ada8 !important;
+        background-color: #fff !important;
+      }
+    }
+  }
+}
+
+.form-wrapper {
+  padding: 50px;
+  margin: auto;
+  width: 50%;
+  overflow: hidden;
+  overflow-y: scroll;
+  form {
+    display: flex;
+    flex-direction: column;
+    .form-section {
+      flex: 1;
+      padding: 10px 0px;
+      width: 100%;
+      display: flex;
+      margin: auto;
+      flex-wrap: wrap;
+      div {
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        label {
+          color: #1b1b1b;
+          font-size: 1rem;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+        .resize {
+          resize: both;
+        }
+        input {
+          padding: 10px;
+          color: #21ada8;
+          font-size: 2rem;
+          border: none;
+          border-radius: 2px;
+          border: 2px solid lightgray;
+          background-color: lightgrey;
+          &:focus {
+            outline: none;
+            border: 2px solid #21ada8;
+          }
+        }
+      }
+    }
+  }
+}
+
+.registerButton {
+  margin-top: 20px;
+  padding: 10px 0px !important;
+  background-color: #21ada8 !important;
+  color: #fff !important;
+  font-size: 1.5rem !important;
+  border: 2px solid #21ada8 !important;
+  &:hover {
+    color: #21ada8 !important;
+    background-color: #fff !important;
+    border: 2px solid #21ada8 !important;
+  }
+}
+
+.Approval {
+  margin: auto;
+  margin-top: 200px;
+  strong {
+    color: green;
+  }
+  .Green {
+    color: green;
+  }
+  .Red {
+    color: red;
+  }
+}

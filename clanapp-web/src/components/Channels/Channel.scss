@@ -1,0 +1,20 @@
+.Channel {
+  flex-grow: 1;
+  height: 100vh;
+  .channelHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    .channelName {
+      text-transform: lowercase;
+    }
+  }
+  .chatMessages {
+    height: 80vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+}
