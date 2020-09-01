@@ -14,6 +14,7 @@ export default function Users() {
   const [searchPending, setSearchPending] = useState("");
   const [renderApproved, setRenderApproved] = useState([]);
   const [renderPending, setRenderPending] = useState([]);
+  const [chapterList, setChapterList] = useState([]);
 
   const userDetails = useSelector((state) => state.userDetails);
 
@@ -25,6 +26,14 @@ export default function Users() {
           snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() }))
         );
       });
+    db.collection("Chapters")
+      .orderBy("name", "asc")
+      .onSnapshot((snapshot) => {
+        setChapterList(
+          snapshot.docs.map((doc) => ({ id: doc.id, chapter: doc.data() }))
+        );
+      });
+    setChapterList(userDetails.chapter);
   }, []);
 
   useEffect(() => {
@@ -32,13 +41,12 @@ export default function Users() {
     setPendingUsers([]);
     users.map((user) => {
       if (
-        user.data.email != userDetails.email &&
-        user.data.email != "shivankar1234@gmail.com"
+        user.data.email !== userDetails.email &&
+        user.data.email !== "shivankar1234@gmail.com"
       ) {
-        if (user.data.approved == true) {
+        if (user.data.approved === true) {
           setApprovedUsers((approvedUsers) => [...approvedUsers, user]);
         } else {
-          console.log(user.email);
           setPendingUsers((pendingUsers) => [...pendingUsers, user]);
         }
       }
@@ -106,7 +114,12 @@ export default function Users() {
         <div className="users-section">
           <FlipMove>
             {renderPending.map(({ data, id }) => (
-              <UserListItem key={id} email={data.email} user={data} />
+              <UserListItem
+                key={id}
+                email={data.email}
+                user={data}
+                chapterList={chapterList}
+              />
             ))}
           </FlipMove>
         </div>

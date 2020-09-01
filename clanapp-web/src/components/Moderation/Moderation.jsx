@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Moderation.scss";
 import db from "../../firebase";
-import { useSelector } from "react-redux";
 import { FilterList } from "@material-ui/icons";
 import ModerationItems from "./ModerationItems/ModerationItems";
 

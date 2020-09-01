@@ -1,12 +1,12 @@
 import React from "react";
 import "./MenuItem.scss";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default function MenuItem({ Icon, title }) {
+export default function MenuItem({ Icon, title, link }) {
   return (
     <div className="MenuItem">
       {Icon && <Icon className="menuItem_icon" />}
-      <Link to={`/panel/${title}`}>{title}</Link>
+      <Link to={link === "/" ? `/` : `/panel/${link}`}>{title}</Link>
     </div>
   );
 }

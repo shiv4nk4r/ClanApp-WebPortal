@@ -2,13 +2,15 @@
   min-height: 100vh;
   max-height: 100vh;
   min-width: 250px;
-  background-color: #006da8;
+  background-color: #f0f2f5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-right: 2px solid #e9e9eb;
+  padding: 0px 5px;
   .title {
     padding-top: 20px;
-    color: #fff;
+    color: #1b1b1b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,9 +27,8 @@
       letter-spacing: 0.2rem;
       font-size: 1rem;
       font-weight: 400;
-      border-top: 1px solid #005f8e;
+      border-top: 4px solid #e9e9eb;
       padding: 20px 20px;
-      border-bottom: 1px solid #005f8e;
       align-items: center;
       justify-content: flex-start;
       .MuiSvgIcon-root {

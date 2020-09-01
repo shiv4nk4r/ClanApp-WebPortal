@@ -1,0 +1,58 @@
+.chapterSection {
+  background-color: #f0f2f5;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  align-content: flex-start;
+  .addChapter {
+    background-color: #fff;
+    border: 2px solid #e9e9eb;
+    border-radius: 10px;
+    min-width: 35vw;
+    margin: 10px;
+    padding: 20px;
+    height: 20vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      flex: 1;
+      justify-content: center;
+      label {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 10px 0px;
+        color: #929292;
+      }
+      .Red {
+        color: #de5246;
+      }
+      Button {
+        display: none;
+      }
+      input {
+        padding: 10px 0px;
+        font-size: 2.5rem;
+        border: none;
+        font-weight: 700;
+        color: #1aa260;
+        border-bottom: 2px solid #e9e9eb;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          color: #1b1b1b;
+        }
+      }
+    }
+  }
+}

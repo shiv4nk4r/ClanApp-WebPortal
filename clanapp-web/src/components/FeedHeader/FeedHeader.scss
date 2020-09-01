@@ -1,0 +1,102 @@
+.Header {
+  min-height: 10vh;
+  height: 10vh;
+  padding: 20px;
+  background-color: #006da8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #6197b4;
+  .title {
+    flex: 1;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+  }
+  .filter {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    svg {
+      padding: 10px;
+    }
+    input {
+      background: none;
+      font-size: 1rem;
+      border: none;
+      padding: 10px;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid #fff;
+      }
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+  .userPanel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    .details {
+      display: flex;
+      flex-direction: column;
+      .avatar {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        img {
+          margin: 10px;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    .logout {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .clickable {
+        padding: 5px;
+        button {
+          padding: 10px !important;
+          background-color: #fff !important;
+          border: 1px solid #fff;
+          &:hover {
+            color: #fff;
+            background-color: #006da8 !important;
+          }
+        }
+      }
+      .Red {
+        padding: 5px;
+        button {
+          padding: 10px !important;
+          color: #de5246;
+          background-color: #fff;
+          border: 1px solid #fff;
+        }
+      }
+      .Green {
+        padding: 5px;
+        button {
+          padding: 10px !important;
+          color: #1aa260;
+          background-color: #fff;
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+}

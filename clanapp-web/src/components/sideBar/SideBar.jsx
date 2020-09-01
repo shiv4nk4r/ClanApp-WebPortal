@@ -6,8 +6,9 @@ import {
   KeyboardArrowDown,
   Home,
   AccountCircle,
-  ArrowRightAlt,
+  PostAdd,
   Notifications,
+  LibraryBooks,
 } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import db from "../../firebase";
@@ -35,9 +36,11 @@ export default function SideBar() {
       <div className="title">CLAN SERVER</div>
       <div className="menu">
         <Avatar alt={user?.displayName} src={user?.photoURL} />
-        <MenuItem Icon={Home} title="Home" />
-        <MenuItem Icon={AccountCircle} title="Users" />
-        <MenuItem Icon={Notifications} title="Moderation" />
+        <MenuItem Icon={Home} link="/" title="Home" />
+        <MenuItem Icon={AccountCircle} link="users" title="Users" />
+        <MenuItem Icon={PostAdd} link="createpost" title="Create Post" />
+        <MenuItem Icon={LibraryBooks} link="chapters" title="Chapters" />
+        <MenuItem Icon={Notifications} link="moderation" title="Moderation" />
       </div>
       <div className="channels">
         <div className="title">

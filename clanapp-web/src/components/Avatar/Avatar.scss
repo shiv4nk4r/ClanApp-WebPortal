@@ -3,7 +3,7 @@
   justify-content: flex-start;
   padding-top: 10px;
   align-items: center;
-  color: #fff;
+  color: #1b1b1b;
   font-weight: 700;
   font-size: 1.1rem;
   flex-wrap: wrap;
@@ -30,7 +30,8 @@
     }
   }
   &:hover {
-    background-color: #fff;
-    color: #006da8;
+    background-color: #e9e9eb;
+    border-radius: 10px;
+    color: #1b1b1b;
   }
 }

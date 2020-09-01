@@ -6,6 +6,7 @@ import db from "../../firebase";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setUserLoggedOut } from "../../actions";
+import { useHistory } from "react-router-dom";
 
 export default function Registration() {
   const [FirstName, setFirstName] = useState("");
@@ -14,9 +15,12 @@ export default function Registration() {
   const [Contact, setContact] = useState("");
   const [Address, setAddress] = useState("");
 
+  const [tempBool, settempBool] = useState(false);
+
   const user = useSelector((state) => state.isLogged);
   const userDetails = useSelector((state) => state.userDetails);
   const dispatch = useDispatch();
+  const history = useHistory();
 
   useEffect(() => {
     setEmail(userDetails?.email);

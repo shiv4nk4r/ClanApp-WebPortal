@@ -1,0 +1,79 @@
+.Post {
+  min-height: 300px;
+  width: 40vw;
+  flex-grow: 1;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #e9e9eb;
+  .postHeader {
+    padding: 15px;
+    background-color: #fff;
+    color: #1b1b1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .leftSection {
+      .postTitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      .postBy {
+        font-size: 0.9rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        padding: 10px 0px;
+        .MuiSvgIcon-root {
+          font-size: 1rem;
+          margin: 0px 5px;
+          color: #1da1f2;
+        }
+      }
+    }
+    .rightSection {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .postDate {
+        font-weight: 500;
+        font-size: 0.8rem;
+      }
+      .chapters {
+        display: flex;
+        padding: 5px 0px;
+        .name {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .postBody {
+    flex: 1;
+    padding: 20px 0px;
+    background-color: #fff;
+    margin: 0px 20px;
+    border-bottom: 1px solid #e9e9eb;
+    border-top: 1px solid #e9e9eb;
+  }
+  .postFooter {
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    .Approved {
+      padding: 0px 10px;
+      color: #006da8;
+      cursor: pointer;
+    }
+    .NotApproved {
+      padding: 0px 10px;
+      color: #e9e9eb;
+      cursor: pointer;
+    }
+  }
+}

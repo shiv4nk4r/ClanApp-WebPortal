@@ -1,0 +1,66 @@
+.chapterItem {
+  background-color: #fff;
+  border: 2px solid #e9e9eb;
+  border-radius: 10px;
+  min-width: 35vw;
+  margin: 10px;
+  padding: 20px;
+  height: 20vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .upperSection {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #e9e9eb;
+    flex: 1;
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1b1b1b;
+    }
+    .members {
+      font-size: 1rem;
+      span {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+    }
+  }
+  .lowerSection {
+    display: flex;
+    flex: 1;
+    padding: 10px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    a {
+      color: #1b1b1b;
+      text-decoration: none;
+      &:hover {
+        background: #f0f2f5;
+        border-radius: 10px;
+      }
+    }
+    .admins {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .MuiSvgIcon-root {
+        margin: 0px 5px;
+      }
+    }
+    .details {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .MuiSvgIcon-root {
+        margin: 0px 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+.Feed {
+  min-height: 100vh;
+  .Header {
+    min-height: 10vh;
+    height: 10vh;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #e9e9eb;
+    .title {
+      flex: 1;
+      color: #1b1b1b;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+    }
+    .filter {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1b1b1b;
+      svg {
+        padding: 10px;
+      }
+      input {
+        background: none;
+        font-size: 1rem;
+        border: none;
+        padding: 10px;
+        border-bottom: 1px solid #1b1b1b;
+        color: #1b1b1b;
+        &:focus {
+          outline: none;
+          border-bottom: 2px solid #1b1b1b;
+        }
+        &::placeholder {
+          color: #1b1b1b;
+        }
+      }
+    }
+    .userPanel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      .details {
+        display: flex;
+        flex-direction: column;
+        .avatar {
+          display: flex;
+          align-items: center;
+          color: #1b1b1b;
+          font-size: 1.2rem;
+          font-weight: 500;
+          img {
+            margin: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+      .logout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .clickable {
+          padding: 5px;
+          button {
+            padding: 10px !important;
+            background-color: #fff !important;
+            border: 1px solid #e9e9eb;
+            &:hover {
+              color: #1b1b1b;
+              background-color: #e9e9eb !important;
+            }
+          }
+        }
+        .Red {
+          padding: 5px;
+          button {
+            padding: 10px !important;
+            color: #de5246;
+            background-color: #fff;
+            border: 1px solid #fff;
+          }
+        }
+        .Green {
+          padding: 5px;
+          button {
+            padding: 10px !important;
+            color: #1aa260;
+            background-color: #fff;
+            border: 1px solid #e9e9eb;
+          }
+        }
+      }
+    }
+  }
+  .posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #f0f2f5;
+    height: 85vh;
+
+    .Hero {
+      margin: 10px 0px;
+      border-top: 4px solid #e9e9eb;
+      width: 40vw;
+      font-size: 2rem;
+      padding: 10px 0px;
+    }
+    .addPost {
+      padding: 20px;
+      margin-top: 20px;
+      width: 35vw;
+      border-radius: 10px;
+      border: 2px solid #e9e9eb;
+      background-color: #fff;
+      .title {
+        font-size: 1.2rem;
+        padding: 10px 0px;
+      }
+      .inputTitle {
+        padding: 5px 0px;
+        input {
+          background: none;
+          border: none;
+          border-bottom: 1px solid #1b1b1b;
+          font-size: 1.5rem;
+          font-weight: 700;
+          padding: 10px 0px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .inputBody {
+        padding: 5px 0px;
+        textarea {
+          background: none;
+          border: none;
+          border-bottom: 1px solid #1b1b1b;
+          font-size: 1.2rem;
+          padding: 10px 0px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .submitButton {
+        Button {
+          padding: 10px 20px !important;
+          background-color: #fff;
+          color: #1b1b1b !important;
+          text-transform: inherit !important;
+          border: 2px solid #f0f2f5;
+          border-radius: 5px !important;
+          &:hover {
+            background-color: #006da8 !important;
+            color: #fff !important;
+          }
+        }
+      }
+      .MuiToggleButtonGroup-root {
+        margin: 20px 0px;
+      }
+    }
+  }
+}
