@@ -41,7 +41,7 @@ export default function Feed() {
           snapshot.docs.map((doc) => ({ id: doc.id, chapter: doc.data() }))
         );
       });
-    setPostChapter(userDetails.chapter);
+    setPostChapter(userDetails?.chapter);
   }, []);
 
   const Submitpost = (e) => {
